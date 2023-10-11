@@ -2,10 +2,9 @@
 
 let finalSelection = [];
 
-// Function to collect answer as a string of 1s and 0s, push to finalSelection array and add to local stroage
+// Function to collect answer as a string of 1s and 0s, push to finalSelection array and add to local storage
 
 function displayTotal() {
-  document.getElementById("result").innerHTML = "";
   let answers = document.getElementsByTagName("input");
   for (i = 0; i < answers.length; i++) {
     if (answers[i].checked) {
@@ -13,6 +12,7 @@ function displayTotal() {
     }
   }
   addLocalStorage();
+  window.location.href = "./results.html";
 }
 
 // Function to add total to local storage

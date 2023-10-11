@@ -7,14 +7,37 @@
     <script src="/JS/results.js" defer></script>
     <title>RESULTS</title>
   </head>
-  <body>
+  <body onload="runLoader()">
+    <div id="loader">
+    </div>
+    <div style="display:none;" id="loaderDiv" class="animate-bottom">
+    <header>
+      <h1>Doll-Me-Do</h1>
+      <p>
+        Don't let kids have all the fun - let killer dolls ruin your adult years
+        too!
+      </p>
+    </header>
     <main>
-      <div><p>Your recommended movie is...</p></div>
+      <div id="recommended"><p>Your recommended movie is...</p></div>
       <section>
-        <div><h3 id="title"></h3></div>
-        <div><img id="poster" /></div>
-        <div><p id="synopsis"></p></div>
+        <div><img id="poster" src="/posters/noresult.jpg" /></div>
+        <div id="title-synopsis">
+          <div><h3 id="title">No results found</h3></div>
+          <div>
+            <p id="synopsis">
+              Look, you're just too picky. Maybe this killer doll thing isn't your bag. How about you just watch Shawshank again, okay? Zihuatanejo and all that.
+            </p>
+          </div>
+          <div id="button-div">
+            <button onclick="history.back()">Go back and select again</button>
+          </div>
+        </div>
       </section>
+
     </main>
+    <footer>
+      <p>&copy; Mike Foster 2023</p>
+    </footer>
   </body>
 </html>
