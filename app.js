@@ -2,10 +2,11 @@
 
 let finalSelection = [];
 
-// Function to collect answer as a string of 1s and 0s, push to finalSelection array and add to local storage
+// Function to collect answer as a string of 1s and 0s, push to finalSelection array (after emptying it) and add to local storage
 
 function displayTotal() {
   let answers = document.getElementsByTagName("input");
+  finalSelection.length = 0;
   for (i = 0; i < answers.length; i++) {
     if (answers[i].checked) {
       finalSelection.push(answers[i].value);
