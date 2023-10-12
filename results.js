@@ -28,6 +28,12 @@ function grabLocalStorage() {
   }
 }
 
+// Clear local storage when hitting the Start Again button
+function clearStorage() {
+  localStorage.clear();
+  history.back();
+}
+
 // Invoke it early so the code has data to work with
 grabLocalStorage();
 
