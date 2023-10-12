@@ -28,9 +28,10 @@ function grabLocalStorage() {
   }
 }
 
-// Clear local storage when hitting the Start Again button
+// Clear local storage and empty array when hitting the Start Again button
 function clearStorage() {
   localStorage.clear();
+  finalSelection = [];
   history.back();
 }
 
