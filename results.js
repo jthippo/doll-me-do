@@ -28,13 +28,6 @@ function grabLocalStorage() {
   }
 }
 
-// Clear local storage and empty array when hitting the Start Again button
-function clearStorage() {
-  localStorage.clear();
-  finalSelection = [];
-  history.back();
-}
-
 // Invoke it early so the code has data to work with
 grabLocalStorage();
 
