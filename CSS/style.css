@@ -141,6 +141,7 @@ h3 {
   font-weight: bold;
   color: red;
   background-color: black;
+  accent-color: red;
 }
 
 input[type="radio"] {
@@ -150,7 +151,7 @@ input[type="radio"] {
 #button-div {
   display: flex;
   justify-content: center;
-  padding-bottom: 4px;
+  padding-bottom: 1rem;
 }
 
 button {
