@@ -56,7 +56,7 @@ allMovies = [];
 function Movie(name, criteriaCode, poster, synopsis) {
   this.name = name;
   this.criteriaCode = criteriaCode;
-  this.poster = `/posters/${poster}.jpg`;
+  this.poster = `./posters/${poster}.jpg`;
   this.synopsis = synopsis;
   allMovies.push(this);
 }
