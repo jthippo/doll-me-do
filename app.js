@@ -12,7 +12,7 @@ function displayTotal() {
     }
   }
   addLocalStorage();
-  window.location.href = "./HTML/results.html";
+  window.location.href = "./results.html";
 }
 
 // Function to add total to local storage
