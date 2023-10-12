@@ -11,18 +11,31 @@ header {
   font-size: 3rem;
   margin: 0;
   padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 header p {
   padding-left: 3rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Bahnschrift", sans-serif;
   font-size: 1rem;
+  color: red;
+  font-style: italic;
 }
 
-div p {
-  margin: 1rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 0.9rem;
+#circle-img {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 180px;
+  height: 180px;
+  margin-right: 2rem;
+}
+
+#dollheads {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 h1 {
@@ -30,9 +43,57 @@ h1 {
   margin: 1rem 0;
 }
 
-section {
+main {
+  background-image: linear-gradient(to bottom, red, white 110%);
+}
+
+#introduction {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+#hero-img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  margin-right: 1rem;
+}
+
+#singledoll {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h3 {
+  font-family: "Ghoulish";
+  color: black;
+  font-size: 2rem;
+}
+
+#intro-text {
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 1rem;
+  max-width: 50%;
+}
+
+#recommended {
+  display: flex;
+  justify-content: center;
+  font-family: "Ghoulish";
+  color: white;
+  font-size: 2rem;
+}
+
+#recommended p {
+  margin: 0 0 1rem 0;
+}
+
+#selections {
+  display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
@@ -46,7 +107,6 @@ section {
   width: 48%;
   height: 5rem;
   border: 4px solid black;
-  border-radius: 15px;
   margin: 6px;
   background-color: gainsboro;
 }
@@ -60,6 +120,12 @@ section {
   width: 50%;
 }
 
+.criteria-box p {
+  margin: 1rem;
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 1rem;
+}
+
 .radio-box {
   display: flex;
   flex-direction: row;
@@ -71,7 +137,7 @@ section {
   justify-content: space-evenly;
   height: 75%;
   width: 50%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Bahnschrift", sans-serif;
   font-weight: bold;
   color: red;
   background-color: black;
@@ -84,7 +150,7 @@ input[type="radio"] {
 #button-div {
   display: flex;
   justify-content: center;
-  margin-bottom: 4px;
+  padding-bottom: 4px;
 }
 
 button {
@@ -108,7 +174,8 @@ button:hover {
 footer {
   background-color: black;
   color: red;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Ghoulish";
   font-size: 1rem;
   padding: 1rem;
+  text-align: right;
 }

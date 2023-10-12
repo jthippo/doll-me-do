@@ -11,12 +11,31 @@ header {
   font-size: 3rem;
   margin: 0;
   padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 header p {
   padding-left: 3rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Bahnschrift", sans-serif;
   font-size: 1rem;
+  color: red;
+  font-style: italic;
+}
+
+#circle-img {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 180px;
+  height: 180px;
+  margin-right: 2rem;
+}
+
+#dollheads {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 h1 {
@@ -24,27 +43,28 @@ h1 {
   margin: 1rem 0;
 }
 
+main {
+  background-image: linear-gradient(to bottom, red, white 110%);
+}
+
 #recommended {
   display: flex;
   justify-content: center;
   font-family: "Ghoulish";
-  color: red;
+  color: white;
   font-size: 2rem;
 }
 
 section {
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
-}
-
-img {
-  max-width: 350px;
-  border: 4px solid red;
+  padding-bottom: 1.5rem;
 }
 
 #poster {
   margin-right: 1rem;
+  max-width: 350px;
+  border: 4px solid red;
 }
 
 #title-synopsis {
@@ -61,18 +81,17 @@ img {
   color: red;
   font-size: 2.5rem;
   border: 2px solid black;
-  border-radius: 15px;
   background-color: black;
   margin: 0;
 }
 
 #synopsis {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 0.9rem;
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 1rem;
   color: black;
   padding: 1rem;
-  border: 2px solid black;
-  border-radius: 15px;
+  border: 4px solid red;
+  background-color: white;
 }
 
 #button-div {
@@ -102,9 +121,10 @@ button:hover {
 footer {
   background-color: black;
   color: red;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Ghoulish";
   font-size: 1rem;
   padding: 1rem;
+  text-align: right;
 }
 
 /* CSS loader animation disguises the brief transition between the stock "no results" content and the user's selection */

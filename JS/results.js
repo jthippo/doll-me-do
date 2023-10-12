@@ -1,3 +1,15 @@
+// CSS loader animation
+let loader;
+
+function runLoader() {
+  loader = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("loaderDiv").style.display = "block";
+}
+
 // Specify HTML title element
 const title = document.getElementById("title");
 const poster = document.getElementById("poster");
@@ -185,15 +197,3 @@ new Movie(
 );
 
 stringCompare();
-
-// CSS animation loader
-let loader;
-
-function runLoader() {
-  loader = setTimeout(showPage, 2000);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("loaderDiv").style.display = "block";
-}
